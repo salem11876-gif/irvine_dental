@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEO & Entity Evaluation | Irvine Dental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            200: '#bae0fd',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        slateCustom: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar & print styles */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-slateCustom-50 text-slateCustom-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-200/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-slateCustom-900 leading-tight">GEO & Entity Audit</h1>
+                    <p class="text-xs font-medium text-slate-500">Irvine Dental (<a href="https://www.irvinedental.com" target="_blank" rel="noopener" class="text-brand-600 hover:underline">irvinedental.com</a>)</p>
+                </div>
+            </div>
+            <nav class="hidden lg:flex items-center space-x-6 text-sm font-semibold text-slate-600">
+                <a href="#summary" class="hover:text-brand-600 transition">Summary</a>
+                <a href="#scorecard" class="hover:text-brand-600 transition">Scorecard</a>
+                <a href="#matrix" class="hover:text-brand-600 transition">Evaluation Matrix</a>
+                <a href="#footprint" class="hover:text-brand-600 transition">Entity Footprint</a>
+                <a href="#schema" class="hover:text-brand-600 transition">Schema Code</a>
+                <a href="#action-plan" class="hover:text-brand-600 transition">Action Plan</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-brand-50/50 via-white to-slateCustom-50 pt-12 pb-16 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100/70 border border-brand-200 text-brand-800 text-xs font-semibold uppercase tracking-wider mb-6">
+                <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                Generative Engine Optimization (GEO) Evaluation Report
+            </div>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slateCustom-900 tracking-tight leading-tight max-w-4xl">
+                AI Visibility, Knowledge Graph & Entity Authority Audit
+            </h1>
+            <p class="mt-4 text-lg text-slate-600 max-w-3xl leading-relaxed">
+                Independent structural evaluation of <span class="font-semibold text-slate-800">Irvine Dental</span> (Dr. Jeffrey C. Robertson, DDS). Assessment of search entity clarity, machine-readability, and recommendation potential across AI conversational systems.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mt-10">
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
+                    <p class="text-xs uppercase font-bold text-slate-400 tracking-wider">Target Entity</p>
+                    <p class="text-lg font-bold text-slateCustom-900 mt-1">Irvine Dental</p>
+                    <p class="text-xs text-slate-500 mt-0.5">Est. 1986 (Irvine, CA)</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
+                    <p class="text-xs uppercase font-bold text-slate-400 tracking-wider">Lead Practitioner</p>
+                    <p class="text-lg font-bold text-slateCustom-900 mt-1">Dr. J. C. Robertson</p>
+                    <p class="text-xs text-slate-500 mt-0.5">DDS, Loma Linda Univ.</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
+                    <p class="text-xs uppercase font-bold text-slate-400 tracking-wider">Primary Risk</p>
+                    <p class="text-lg font-bold text-amber-600 mt-1">Severe Collision</p>
+                    <p class="text-xs text-slate-500 mt-0.5">5+ Local "Irvine Dental" Brands</p>
+                </div>
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
+                    <p class="text-xs uppercase font-bold text-slate-400 tracking-wider">Core Deficiency</p>
+                    <p class="text-lg font-bold text-rose-600 mt-1">Schema Markup</p>
+                    <p class="text-xs text-slate-500 mt-0.5">Missing Structured Data Layer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
+
+        <!-- Executive Summary Section -->
+        <section id="summary" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-3 h-8 bg-brand-500 rounded-full"></div>
+                <h2 class="text-2xl font-bold text-slateCustom-900">1. Executive Summary</h2>
+            </div>
+            
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-sm space-y-6">
+                <p class="text-slate-600 leading-relaxed text-base">
+                    This evaluation analyzes the digital entity, topical authority, technical architecture, and generative search readiness for <strong class="text-slate-800">Irvine Dental</strong> (<code class="text-brand-600 bg-brand-50 px-2 py-0.5 rounded font-mono text-sm">irvinedental.com</code>), led by <strong class="text-slate-800">Dr. Jeffrey C. Robertson, DDS</strong>. Operating at 4940 Irvine Blvd, Suite 101, Irvine, CA 92620, the clinic represents a long-standing local dental entity established in 1986.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80">
+                        <div class="flex items-start gap-3">
+                            <span class="p-2 rounded-lg bg-amber-100 text-amber-700 font-bold text-xs mt-0.5">ALERT</span>
+                            <div>
+                                <h4 class="font-semibold text-slate-900 text-sm">Severe Brand Collision in Local Namespace</h4>
+                                <p class="text-xs text-slate-600 mt-1 leading-relaxed">The exact-match domain (<code class="text-xs">irvinedental.com</code>) operates in a highly congested local namespace containing at least five distinct dental practices using "Irvine Dental" variations (e.g., irvinedental.org, irvine-dental.com, irvinedentalstudio.com, irvinedentalgroup.net, irvinedentalcare.com). Without explicit schema markers, LLMs experience severe entity resolution confusion.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80">
+                        <div class="flex items-start gap-3">
+                            <span class="p-2 rounded-lg bg-brand-100 text-brand-700 font-bold text-xs mt-0.5">E-E-A-T</span>
+                            <div>
+                                <h4 class="font-semibold text-slate-900 text-sm">Under-Leveraged Provider Authority</h4>
+                                <p class="text-xs text-slate-600 mt-1 leading-relaxed">Dr. Jeffrey C. Robertson possesses 40+ years of clinical experience, a DDS from Loma Linda University, membership in DOCS, and recognition in <em>Orange Coast Magazine</em>. However, these authority signals remain locked in unstructured text rather than machine-readable JSON-LD schema.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80">
+                        <div class="flex items-start gap-3">
+                            <span class="p-2 rounded-lg bg-rose-100 text-rose-700 font-bold text-xs mt-0.5">TECHNICAL</span>
+                            <div>
+                                <h4 class="font-semibold text-slate-900 text-sm">Missing Structured Data Layer</h4>
+                                <p class="text-xs text-slate-600 mt-1 leading-relaxed">The site currently lacks comprehensive JSON-LD schema (nested <code class="text-xs">Dentist</code>, <code class="text-xs">MedicalBusiness</code>, <code class="text-xs">Person</code>, <code class="text-xs">FAQPage</code>, and <code class="text-xs">sameAs</code> references), preventing search engines from deterministically mapping credentials and service details.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80">
+                        <div class="flex items-start gap-3">
+                            <span class="p-2 rounded-lg bg-emerald-100 text-emerald-700 font-bold text-xs mt-0.5">CONTENT</span>
+                            <div>
+                                <h4 class="font-semibold text-slate-900 text-sm">Topical Content Gaps in Conversational Intent</h4>
+                                <p class="text-xs text-slate-600 mt-1 leading-relaxed">While fundamental dentistry procedures are covered, the content architecture lacks detailed conversational Q&A, procedural comparisons, cost breakdowns, and decision-stage guidance necessary for AI search queries.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Entity Health Scorecard -->
+        <section id="scorecard" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-3 h-8 bg-brand-500 rounded-full"></div>
+                <h2 class="text-2xl font-bold text-slateCustom-900">2. Entity Health Scorecard</h2>
+            </div>
+
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-sm overflow-x-auto">
+                <table class="w-full text-left text-sm">
+                    <thead>
+                        <tr class="border-b border-slate-200 text-xs font-bold text-slate-400 uppercase tracking-wider bg-slate-50/50">
+                            <th class="py-3.5 px-4 rounded-l-xl">Evaluation Dimension</th>
+                            <th class="py-3.5 px-4">Maturity Level</th>
+                            <th class="py-3.5 px-4 rounded-r-xl">Primary Assessment Summary</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr>
+                            <td class="py-4 px-4 font-semibold text-slate-900 whitespace-nowrap">Entity Identity & Disambiguation</td>
+                            <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800">Needs Enhancement</span></td>
+                            <td class="py-4 px-4 text-slate-600 text-xs sm:text-sm">High domain authority offset by severe local name collisions and missing explicit URI/schema identifiers.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-semibold text-slate-900 whitespace-nowrap">Google Business Profile & Local Signals</td>
+                            <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-full text-xs font-bold bg-sky-100 text-sky-800">Moderate</span></td>
+                            <td class="py-4 px-4 text-slate-600 text-xs sm:text-sm">Established physical location and long operating history; requires structured audit of review attributes.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-semibold text-slate-900 whitespace-nowrap">External Brand Mentions & Corroboration</td>
+                            <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-full text-xs font-bold bg-sky-100 text-sky-800">Moderate</span></td>
+                            <td class="py-4 px-4 text-slate-600 text-xs sm:text-sm">Strong editorial mentions (Orange Coast Magazine, ThreeBestRated); lacks widespread press/academic citations.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-semibold text-slate-900 whitespace-nowrap">Directory & Citation Ecosystem</td>
+                            <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800">Needs Enhancement</span></td>
+                            <td class="py-4 px-4 text-slate-600 text-xs sm:text-sm">Active listings present across BBB, WebMD, and Opencare; NAP and phone alignment require consolidation.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-semibold text-slate-900 whitespace-nowrap">Doctor / Expert Entity Authority</td>
+                            <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-full text-xs font-bold bg-sky-100 text-sky-800">Moderate</span></td>
+                            <td class="py-4 px-4 text-slate-600 text-xs sm:text-sm">Deep clinical history and DOCS credentials; missing structured Person schema and published research.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-semibold text-slate-900 whitespace-nowrap">Website Entity Architecture</td>
+                            <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-full text-xs font-bold bg-indigo-100 text-indigo-800">Emerging</span></td>
+                            <td class="py-4 px-4 text-slate-600 text-xs sm:text-sm">Clear service menu; hierarchical relationships between conditions, treatments, and providers are informal.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-semibold text-slate-900 whitespace-nowrap">Content & Conversational Intent</td>
+                            <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-full text-xs font-bold bg-indigo-100 text-indigo-800">Emerging</span></td>
+                            <td class="py-4 px-4 text-slate-600 text-xs sm:text-sm">Covers fundamental dental procedures; lacks direct conversational Q&A and decision-stage content.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-semibold text-slate-900 whitespace-nowrap">Structured Data & Schema</td>
+                            <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-800">Needs Enhancement</span></td>
+                            <td class="py-4 px-4 text-slate-600 text-xs sm:text-sm">Missing robust nested JSON-LD schema (Dentist, Physician, Service, FAQPage, sameAs).</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-semibold text-slate-900 whitespace-nowrap">Technical SEO & Crawlability</td>
+                            <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-full text-xs font-bold bg-sky-100 text-sky-800">Moderate</span></td>
+                            <td class="py-4 px-4 text-slate-600 text-xs sm:text-sm">Functional URL hierarchy, sitemap, and accessibility features; requires validation of dynamic rendering.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-semibold text-slate-900 whitespace-nowrap">AI Retrieval & Citation Readiness</td>
+                            <td class="py-4 px-4"><span class="px-2.5 py-1 rounded-full text-xs font-bold bg-indigo-100 text-indigo-800">Emerging</span></td>
+                            <td class="py-4 px-4 text-slate-600 text-xs sm:text-sm">High readability; lacks structured extractable blocks, tables, and microdata for RAG engines.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Complete Evaluation Matrix Section -->
+        <section id="matrix" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-3 h-8 bg-brand-500 rounded-full"></div>
+                <h2 class="text-2xl font-bold text-slateCustom-900">3. Complete Evaluation Matrix</h2>
+            </div>
+
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-sm overflow-x-auto">
+                <table class="w-full text-left text-xs sm:text-sm border-collapse">
+                    <thead>
+                        <tr class="border-b border-slate-200 text-xs font-bold text-slate-400 uppercase tracking-wider bg-slate-50/50">
+                            <th class="py-3.5 px-4">Area</th>
+                            <th class="py-3.5 px-4 min-w-[220px]">Current Evidence</th>
+                            <th class="py-3.5 px-4 min-w-[200px]">Status / Observation</th>
+                            <th class="py-3.5 px-4">GEO Impact</th>
+                            <th class="py-3.5 px-4">Priority</th>
+                            <th class="py-3.5 px-4 min-w-[260px]">Strategic Recommendation</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr>
+                            <td class="py-4 px-4 font-bold text-slate-900">Entity Disambiguation</td>
+                            <td class="py-4 px-4 text-slate-600">Domain is irvinedental.com, but competitors use irvinedental.org, irvine-dental.com, etc.</td>
+                            <td class="py-4 px-4 text-slate-600">Severe name collision risk across local knowledge graphs.</td>
+                            <td class="py-4 px-4"><span class="px-2 py-0.5 rounded font-bold text-xs bg-rose-100 text-rose-700">High</span></td>
+                            <td class="py-4 px-4"><span class="px-2 py-0.5 rounded font-bold text-xs bg-rose-100 text-rose-700">High</span></td>
+                            <td class="py-4 px-4 text-slate-700">Implement explicit JSON-LD schema using legalName ("Jeffrey C Robertson DDS Inc") and @id URIs.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-bold text-slate-900">Practitioner Linking</td>
+                            <td class="py-4 px-4 text-slate-600">Dr. Jeffrey C. Robertson detailed on dedicated page; footer credits his copyright.</td>
+                            <td class="py-4 px-4 text-slate-600">Provider bio exists, but connection to organization lacks machine-readable schema.</td>
+                            <td class="py-4 px-4"><span class="px-2 py-0.5 rounded font-bold text-xs bg-rose-100 text-rose-700">High</span></td>
+                            <td class="py-4 px-4"><span class="px-2 py-0.5 rounded font-bold text-xs bg-rose-100 text-rose-700">High</span></td>
+                            <td class="py-4 px-4 text-slate-700">Deploy Person schema linked to Dentist schema via founder, employee, and alumniOf (Loma Linda University).</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-bold text-slate-900">Directory Consistency</td>
+                            <td class="py-4 px-4 text-slate-600">Listed on BBB, WebMD, ThreeBestRated. Phone varies (714-838-7272 vs 714-908-7472).</td>
+                            <td class="py-4 px-4 text-slate-600">Core NAP signals intact, but secondary phone numbers introduce minor index noise.</td>
+                            <td class="py-4 px-4"><span class="px-2 py-0.5 rounded font-bold text-xs bg-amber-100 text-amber-700">Moderate</span></td>
+                            <td class="py-4 px-4"><span class="px-2 py-0.5 rounded font-bold text-xs bg-amber-100 text-amber-700">Medium</span></td>
+                            <td class="py-4 px-4 text-slate-700">Standardize primary phone (714-838-7272) across all external directories and update BBB profile.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-bold text-slate-900">Third-Party Validation</td>
+                            <td class="py-4 px-4 text-slate-600">Recognized in Orange Coast Magazine (2021, 2022, 2026 Top Dentists) and ThreeBestRated.</td>
+                            <td class="py-4 px-4 text-slate-600">Strong local print authority; lacks external digital links from local publications.</td>
+                            <td class="py-4 px-4"><span class="px-2 py-0.5 rounded font-bold text-xs bg-amber-100 text-amber-700">Moderate</span></td>
+                            <td class="py-4 px-4"><span class="px-2 py-0.5 rounded font-bold text-xs bg-amber-100 text-amber-700">Medium</span></td>
+                            <td class="py-4 px-4 text-slate-700">Convert offline press features into digital trust badges and secure linked digital press mentions.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-bold text-slate-900">Structured Data</td>
+                            <td class="py-4 px-4 text-slate-600">Primary site lacks visible JSON-LD microdata for Dentist or MedicalBusiness.</td>
+                            <td class="py-4 px-4 text-slate-600">Generative parsing relies on unstructured text extraction.</td>
+                            <td class="py-4 px-4"><span class="px-2 py-0.5 rounded font-bold text-xs bg-rose-100 text-rose-700">High</span></td>
+                            <td class="py-4 px-4"><span class="px-2 py-0.5 rounded font-bold text-xs bg-rose-100 text-rose-700">High</span></td>
+                            <td class="py-4 px-4 text-slate-700">Inject complete JSON-LD script containing Dentist, PostalAddress, GeoCoordinates, and sameAs.</td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-bold text-slate-900">Conversational Content</td>
+                            <td class="py-4 px-4 text-slate-600">Service pages detail general procedures; blog covers niche alignment topics.</td>
+                            <td class="py-4 px-4 text-slate-600">Minimal decision-stage content answering direct consumer questions.</td>
+                            <td class="py-4 px-4"><span class="px-2 py-0.5 rounded font-bold text-xs bg-rose-100 text-rose-700">High</span></td>
+                            <td class="py-4 px-4"><span class="px-2 py-0.5 rounded font-bold text-xs bg-rose-100 text-rose-700">High</span></td>
+                            <td class="py-4 px-4 text-slate-700">Author comprehensive Q&A modules addressing cost, recovery, comfort, and comparison queries.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Verified Entity Footprint & Collision Analysis -->
+        <section id="footprint" class="scroll-mt-24 space-y-8">
+            <div class="flex items-center gap-3">
+                <div class="w-3 h-8 bg-brand-500 rounded-full"></div>
+                <h2 class="text-2xl font-bold text-slateCustom-900">4. Verified Footprint & Namespace Collision</h2>
+            </div>
+
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-sm space-y-6">
+                <h3 class="text-lg font-bold text-slate-900">Verified External Listings</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs sm:text-sm">
+                        <thead>
+                            <tr class="border-b border-slate-200 text-xs font-bold text-slate-400 uppercase tracking-wider bg-slate-50/50">
+                                <th class="py-3.5 px-4">Source / Directory</th>
+                                <th class="py-3.5 px-4">Listed Entity Name</th>
+                                <th class="py-3.5 px-4">Contact Details</th>
+                                <th class="py-3.5 px-4">Verified Data Attributes</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 text-slate-600">
+                            <tr>
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">Official Website</td>
+                                <td class="py-3.5 px-4">Irvine Dental / Dr. Jeffrey C. Robertson</td>
+                                <td class="py-3.5 px-4">4940 Irvine Blvd #101 | (714) 838-7272</td>
+                                <td class="py-3.5 px-4">Primary digital asset; lists office hours (Mon-Thu 7:30-4:30), full service catalog.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">BBB Listing</td>
+                                <td class="py-3.5 px-4">Irvine Dental / Dr Jeffrey Robertson DDS</td>
+                                <td class="py-3.5 px-4">Irvine, CA | (714) 908-7472</td>
+                                <td class="py-3.5 px-4">File opened 03/25/2015; Sole Proprietorship / Jeffrey C Robertson DDS Inc.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">ThreeBestRated</td>
+                                <td class="py-3.5 px-4">Jeffrey C. Robertson, DDS</td>
+                                <td class="py-3.5 px-4">4940 Irvine Blvd #101 | (714) 838-7272</td>
+                                <td class="py-3.5 px-4">Score 4.9/5.0 (117/120 inspection points); highlights CA License #33981, DOCS.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">Orange Coast Mag</td>
+                                <td class="py-3.5 px-4">Jeffrey C. Robertson, DDS</td>
+                                <td class="py-3.5 px-4">Irvine, CA | (714) 838-7272</td>
+                                <td class="py-3.5 px-4">Editorial feature in "Top Dentists of Orange County" annual listings (2021, 2022, 2026).</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3.5 px-4 font-semibold text-slate-900">WebMD Directory</td>
+                                <td class="py-3.5 px-4">Dr. Jeffrey Craig Robertson, DDS</td>
+                                <td class="py-3.5 px-4">4940 Irvine Blvd #101 | (714) 838-7272</td>
+                                <td class="py-3.5 px-4">Healthcare provider listing; lists Loma Linda University DDS degree.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pt-6 border-t border-slate-100">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Local Namespace Collision Analysis</h3>
+                    <p class="text-xs sm:text-sm text-slate-600 mb-4">
+                        A critical finding of this evaluation is extreme local namespace congestion. Multiple independent dental practices operate within Irvine, CA using variations of "Irvine Dental".
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
+                        <div class="p-4 rounded-xl border border-brand-300 bg-brand-50/40">
+                            <span class="px-2 py-0.5 rounded bg-brand-500 text-white font-bold text-[10px] uppercase">Target Entity</span>
+                            <p class="font-bold text-slate-900 text-sm mt-1">irvinedental.com</p>
+                            <p class="text-slate-600">Irvine Dental (Dr. Jeffrey C. Robertson)</p>
+                            <p class="text-slate-400 mt-1">4940 Irvine Blvd #101 | (714) 838-7272</p>
+                        </div>
+                        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50">
+                            <span class="px-2 py-0.5 rounded bg-slate-200 text-slate-700 font-bold text-[10px] uppercase">Competitor</span>
+                            <p class="font-bold text-slate-900 text-sm mt-1">irvinedental.org</p>
+                            <p class="text-slate-600">Irvine Dental (Dr. Quan Tran, DMD)</p>
+                            <p class="text-slate-400 mt-1">4330 Barranca Pkwy #117 | (949) 559-1814</p>
+                        </div>
+                        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50">
+                            <span class="px-2 py-0.5 rounded bg-slate-200 text-slate-700 font-bold text-[10px] uppercase">Competitor</span>
+                            <p class="font-bold text-slate-900 text-sm mt-1">irvine-dental.com</p>
+                            <p class="text-slate-600">Irvine Dental Center</p>
+                            <p class="text-slate-400 mt-1">14795 Jeffrey Rd #101 | (949) 551-5888</p>
+                        </div>
+                        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50">
+                            <span class="px-2 py-0.5 rounded bg-slate-200 text-slate-700 font-bold text-[10px] uppercase">Competitor</span>
+                            <p class="font-bold text-slate-900 text-sm mt-1">irvinedentalstudio.com</p>
+                            <p class="text-slate-600">Irvine Dental Studio (Dr. Michael Diep)</p>
+                            <p class="text-slate-400 mt-1">4668 Barranca Pkwy | (949) 559-5110</p>
+                        </div>
+                        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50">
+                            <span class="px-2 py-0.5 rounded bg-slate-200 text-slate-700 font-bold text-[10px] uppercase">Competitor</span>
+                            <p class="font-bold text-slate-900 text-sm mt-1">irvinedentalgroup.net</p>
+                            <p class="text-slate-600">Irvine Dental Group</p>
+                            <p class="text-slate-400 mt-1">18 Endeavor STE 308 | (877) 396-6899</p>
+                        </div>
+                        <div class="p-4 rounded-xl border border-slate-200 bg-slate-50">
+                            <span class="px-2 py-0.5 rounded bg-slate-200 text-slate-700 font-bold text-[10px] uppercase">Competitor</span>
+                            <p class="font-bold text-slate-900 text-sm mt-1">irvinedentalcare.com</p>
+                            <p class="text-slate-600">Irvine Dental Care / Rice Dentistry</p>
+                            <p class="text-slate-400 mt-1">Irvine, CA | (949) 551-5902</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Schema Code Generator Section -->
+        <section id="schema" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-3 h-8 bg-brand-500 rounded-full"></div>
+                <h2 class="text-2xl font-bold text-slateCustom-900">5. Machine-Readable Schema Architecture</h2>
+            </div>
+
+            <div class="bg-slateCustom-900 text-slate-200 rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                    <div>
+                        <h3 class="font-bold text-white text-base">Recommended Structured Data Snippet</h3>
+                        <p class="text-xs text-slate-400">JSON-LD nested architecture for Dentist & Physician entity graph</p>
+                    </div>
+                    <button onclick="navigator.clipboard.writeText(document.getElementById('schemaCode').innerText); this.innerText='Copied!';" class="px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white rounded-xl text-xs font-semibold transition self-start sm:self-auto">
+                        Copy Code Snippet
+                    </button>
+                </div>
+
+                <pre id="schemaCode" class="text-xs font-mono text-sky-300 overflow-x-auto leading-relaxed bg-slate-950 p-5 rounded-2xl border border-slate-800">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dentist",
+      "@id": "https://www.irvinedental.com/#organization",
+      "name": "Irvine Dental",
+      "legalName": "Jeffrey C Robertson DDS Inc",
+      "url": "https://www.irvinedental.com",
+      "telephone": "+1-714-838-7272",
+      "email": "staff@irvinedental.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4940 Irvine Blvd, Suite 101",
+        "addressLocality": "Irvine",
+        "addressRegion": "CA",
+        "postalCode": "92620",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.7145,
+        "longitude": -117.7785
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "07:30",
+          "closes": "16:30"
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "@id": "https://www.irvinedental.com/#doctor-jeffrey-robertson"
+      },
+      "sameAs": [
+        "https://www.bbb.org/us/ca/irvine/profile/dentist/irvine-dental-1126-172011586",
+        "https://threebestrated.com/local-dentists-in-irvine-ca",
+        "https://doctor.webmd.com/doctor/jeffrey-robertson-9f45c154-636a-40a8-b2a5-25f7007598a1-overview"
+      ]
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://www.irvinedental.com/#doctor-jeffrey-robertson",
+      "name": "Dr. Jeffrey C. Robertson, DDS",
+      "jobTitle": "Lead Dentist & Founder",
+      "medicalSpecialty": "Dentistry",
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Loma Linda University",
+          "sameAs": "https://en.wikipedia.org/wiki/Loma_Linda_University"
+        }
+      ],
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Dental Organization for Conscious Sedation (DOCS)"
+      },
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "California Dental License",
+        "value": "33981"
+      },
+      "worksFor": {
+        "@id": "https://www.irvinedental.com/#organization"
+      }
+    }
+  ]
+}</pre>
+            </div>
+        </section>
+
+        <!-- Strategic Action Plan -->
+        <section id="action-plan" class="scroll-mt-24">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-3 h-8 bg-brand-500 rounded-full"></div>
+                <h2 class="text-2xl font-bold text-slateCustom-900">6. Strategic GEO Action Plan</h2>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Phase 1 -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="w-8 h-8 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center text-sm">1</span>
+                        <h3 class="text-lg font-bold text-slate-900">Phase 1 — Core Foundation Alignment</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <span class="font-bold text-brand-700">Inject Nested JSON-LD Schema</span>
+                            <p class="text-slate-600 mt-1">Deploy complete Dentist, Physician, PostalAddress, and OpeningHours schema sitewide to feed AI Knowledge Graphs directly.</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <span class="font-bold text-brand-700">Resolve Phone & NAP Noise</span>
+                            <p class="text-slate-600 mt-1">Update secondary directory listings (BBB) to enforce primary line (714-838-7272) and eliminate data aggregator confusion.</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <span class="font-bold text-brand-700">Couple Social Entity Nodes</span>
+                            <p class="text-slate-600 mt-1">Create/verify official Facebook, LinkedIn, and Instagram profiles; link them in footer for bi-directional verification.</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <span class="font-bold text-brand-700">Embed License & Corporate Data</span>
+                            <p class="text-slate-600 mt-1">Explicitly publish CA License #33981 and legal name ("Jeffrey C Robertson DDS Inc") to resolve local brand collision.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="w-8 h-8 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center text-sm">2</span>
+                        <h3 class="text-lg font-bold text-slate-900">Phase 2 — Entity Authority & Corroboration</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <span class="font-bold text-brand-700">Digitize Editorial Recognition</span>
+                            <p class="text-slate-600 mt-1">Build a "Press & Awards" hub featuring Orange Coast Magazine features and ThreeBestRated accolades.</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <span class="font-bold text-brand-700">Expand Provider Bio Details</span>
+                            <p class="text-slate-600 mt-1">Detail Dr. Robertson's Loma Linda DDS training, DOCS sedation fellowship, and 40-year tenure to establish medical E-E-A-T.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-sm">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="w-8 h-8 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center text-sm">3</span>
+                        <h3 class="text-lg font-bold text-slate-900">Phase 3 — Content & AI Retrieval Optimization</h3>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <span class="font-bold text-brand-700">Deploy Conversational Q&A Modules</span>
+                            <p class="text-slate-600 mt-1">Add Q&A blocks to all service pages with embedded FAQPage JSON-LD schema for generative snippet extraction.</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <span class="font-bold text-brand-700">Build Decision-Stage Content</span>
+                            <p class="text-slate-600 mt-1">Publish comparison guides (e.g., CEREC vs. Lab Crowns, Invisalign vs. Braces) to capture decision-stage intent.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Synthesis & Recommendation -->
+        <section class="bg-gradient-to-br from-brand-900 to-slateCustom-900 text-white rounded-3xl p-8 sm:p-10 shadow-xl">
+            <h2 class="text-2xl font-bold mb-4">Synthesis & Priority Summary</h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                Based on publicly available evidence, the primary strengths supporting Irvine Dental’s digital footprint stem from its exceptional practice tenure (est. 1986), Dr. Jeffrey C. Robertson's verifiable clinical background (Loma Linda University DDS, DOCS), and consistent regional editorial mentions. 
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm border-t border-slate-700/80 pt-6">
+                <div>
+                    <h4 class="font-bold text-brand-200 uppercase tracking-wider text-xs mb-2">Tier 1: Highest-Impact Drivers</h4>
+                    <ul class="list-disc list-inside space-y-1.5 text-slate-300">
+                        <li>Machine-Readable Entity Disambiguation (JSON-LD)</li>
+                        <li>Conversational Intent Content Expansion</li>
+                        <li>Cross-Platform Social Node Coupling</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-brand-200 uppercase tracking-wider text-xs mb-2">Tier 2: Secondary Growth</h4>
+                    <ul class="list-disc list-inside space-y-1.5 text-slate-300">
+                        <li>Suburban Location Targeting (Tustin, Lake Forest)</li>
+                        <li>Directory Phone/NAP Consolidation</li>
+                        <li>Preserving Staff Continuity Signals</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 mt-20 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center text-xs text-slate-500">
+            <p>Generative Engine Optimization (GEO) & Entity Audit Report — Irvine Dental (irvinedental.com)</p>
+            <p class="mt-1">Generated based on public web knowledge graphs and technical signals evaluation.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
